@@ -1,6 +1,8 @@
-# Cheap-Test Converter
+# TestRung
 
 Turn one idea into the cheapest test that could prove it wrong.
+
+**Domain: testrung.com** (primary, not yet bought, see `brand/BRAND.md`). Backup: testrung.io. Full brand guide in `brand/BRAND.md`, logo in `brand/logo.svg`.
 
 Paste a prediction. Get a test ladder, a cost, and a next step in under a minute.
 

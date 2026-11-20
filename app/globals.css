@@ -12,6 +12,10 @@ a { color: #2563eb; }
 button { font: inherit; }
 :focus-visible { outline: 2px solid #2563eb; outline-offset: 2px; border-radius: 4px; }
 .wrap { max-width: 640px; margin: 0 auto; padding: 48px 20px 64px; }
+.brand-header { margin-bottom: 32px; }
+.wordmark { display: inline-flex; align-items: center; gap: 10px; }
+.wordmark-text { font-size: 20px; font-weight: 600; letter-spacing: -0.02em; color: #111827; }
+.wordmark-accent { color: #2563eb; }
 .hero { font-size: 32px; line-height: 1.25; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 12px; }
 .sub { font-size: 16px; line-height: 1.5; color: #6b7280; margin: 0 0 32px; }
 .label { display: block; font-size: 14px; font-weight: 600; margin: 0 0 8px; }

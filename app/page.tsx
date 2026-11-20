@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
+import { Wordmark } from "@/components/Logo";
 import { generateLadder } from "@/lib/generate";
 import { ladderAsText, preregistrationAsMarkdown, type Ladder } from "@/lib/ladder";
 import { DRPLA_EXAMPLE, STRINGS } from "@/lib/strings";
@@ -73,6 +74,9 @@ export default function Home() {
 
   return (
     <main className="wrap">
+      <header className="brand-header">
+        <Wordmark />
+      </header>
       <div aria-live="polite" style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0 0 0 0)" }}>
         {status}
       </div>
