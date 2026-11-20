@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "TestRung — Turn one idea into the cheapest test that could prove it wrong.",
   description:
     "TestRung turns one prediction into a test ladder, a cost, and a next step, in under a minute. A RareGap project.",
-  metadataBase: new URL("https://testrung.com"),
+  metadataBase: new URL("https://testrung.nshipyard.com"),
   openGraph: {
     title: "TestRung",
     description: "Turn one idea into the cheapest test that could prove it wrong.",
-    url: "https://testrung.com",
+    url: "https://testrung.nshipyard.com",
     siteName: "TestRung",
     type: "website",
   },

@@ -180,7 +180,7 @@ TestRung. Carré bleu arrondi, trois barres blanches qui rétrécissent de gauch
 
 ![Planche de marque TestRung : marque, logotype, mono, sur fond sombre, couleurs, carte sociale](screenshots/06-brand-board.png)
 
-Domaine : **testrung.com** (principal, pas encore acheté). Secours : testrung.io.
+Domaine : **testrung.nshipyard.com**. Aucun nouveau domaine à acheter, c'est un sous-domaine de nshipyard.com, à pointer vers l'hébergeur au moment du déploiement.
 
 ## Contribuer
 

@@ -19,17 +19,18 @@ One-line descriptor:
 
 ## Domain
 
-Primary: **testrung.com**
-Backup: **testrung.io**
+Primary: **testrung.nshipyard.com**
 
-Checked 2026-11-20 by RDAP: `testrung.com` returned 404 (no RDAP record, likely unregistered), `testrung.io` returned 404 (no RDAP record, likely unregistered). That is a signal, not proof. A registrar check is required before purchase, and prices change. Do not treat this file as proof the domain is available.
+No new domain to buy. It is a subdomain of nshipyard.com, which Richardson already owns. When the app deploys, point the subdomain at the host. Until then it does not resolve, and the app has no live URL.
 
-Buy plan (not yet bought, no payment was authorised):
+`testrung.com` was checked by RDAP on 2026-11-20 and looked unregistered, and `testrung.io` too, but neither is the plan now. Do not buy either unless the subdomain plan changes.
+
+Buy plan (only if the subdomain plan changes):
 1. Check `testrung.com` at Cloudflare Registrar or Porkbun first. Buy the .com first.
 2. If the .com price is under $20 for year one, buy it for 2 years and turn on auto-renew.
 3. Buy `testrung.io` only if it is also cheap. It is a backup, not a second home.
 4. Point DNS to the host only after the app is deployed. Until then the domain can sit parked.
-5. Set the canonical URL to `https://testrung.com`, with `www.testrung.com` redirecting to it.
+5. Set the canonical URL to `https://testrung.nshipyard.com`, with `www` redirecting to it if used.
 
 Handles to claim when the product goes public, in this order: GitHub `richardsondx/testrung` (repo rename, optional), X `@testrung`, and the same name on the app stores if ever needed. None are claimed in v1.
 
@@ -52,7 +53,7 @@ Construction: a rounded square, blue. Inside, three white horizontal bars, left-
 - Mono: `brand/logo-mono.svg` (ink square, white bars, for one-colour printing)
 - Wordmark: `brand/wordmark.svg` (mark plus "Test" in ink and "Rung" in blue)
 - Favicon: `brand/favicon.svg` (same as the mark, also wired as `app/icon.svg`)
-- Social card: `brand/social-card.svg` (1280 by 640, white, mark, wordmark, tagline, testrung.com)
+- Social card: `brand/social-card.svg` (1280 by 640, white, mark, wordmark, tagline, testrung.nshipyard.com)
 
 Rules:
 - Clear space: at least one bar height on every side.

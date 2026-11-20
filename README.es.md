@@ -180,7 +180,7 @@ TestRung. Cuadrado azul redondeado, tres barras blancas que se acortan de izquie
 
 ![Tablero de marca de TestRung: marca, logotipo, mono, sobre oscuro, colores, tarjeta social](screenshots/06-brand-board.png)
 
-Dominio: **testrung.com** (principal, aún no comprado). Reserva: testrung.io.
+Dominio: **testrung.nshipyard.com**. No hay que comprar un dominio nuevo, es un subdominio de nshipyard.com, que se apuntará al servidor cuando se despliegue.
 
 ## Contribuir
 

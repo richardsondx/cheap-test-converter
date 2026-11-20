@@ -180,7 +180,7 @@ TestRung. Blue rounded square, three white bars shrinking left to right, cost go
 
 ![TestRung brand board: mark, wordmark, mono, on dark, colours, social card](screenshots/06-brand-board.png)
 
-Domain: **testrung.com** (primary, not yet bought). Backup: testrung.io.
+Domain: **testrung.nshipyard.com**. No new domain to buy, it is a subdomain of nshipyard.com, to be pointed at the host when deployed.
 
 ## Contributing
 

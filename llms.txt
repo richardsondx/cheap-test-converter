@@ -34,5 +34,5 @@ Open http://localhost:3000
 
 ## Optional
 
-- Brand: TestRung, domain testrung.com (not yet bought)
+- Brand: TestRung, domain testrung.nshipyard.com (a subdomain of nshipyard.com)
 - Project: RareGap (raregap.ai)
