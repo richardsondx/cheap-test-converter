@@ -72,6 +72,11 @@ export default function Home() {
     setOpenRung(null);
   };
 
+  // The free rungs (literature, public data) are not shown. They are obvious,
+  // and the engine still computes them for the exports. Only the rungs that
+  // cost money, or are gated, appear in the ladder, renumbered from 1.
+  const shownRungs = ladder ? ladder.rungs.filter((r) => r.costLabel !== "Free") : [];
+
   return (
     <main className="wrap">
       <header className="brand-header">
@@ -141,7 +146,7 @@ export default function Home() {
 
           <section className="section" aria-label="Test ladder">
             <h2>Your test ladder</h2>
-            {ladder.rungs.map((rung) => {
+            {shownRungs.map((rung, i) => {
               const open = openRung === rung.id;
               return (
                 <div key={rung.id} className={`rung ${rung.locked ? "locked" : ""}`}>
@@ -152,7 +157,7 @@ export default function Home() {
                     aria-controls={`rung-${rung.id}`}
                     onClick={() => setOpenRung(open ? null : rung.id)}
                   >
-                    <span className="num" aria-hidden="true">{rung.id}</span>
+                    <span className="num" aria-hidden="true">{i + 1}</span>
                     <span className="body">
                       <span className="title">{rung.title}</span>
                       <span className="summary" style={{ display: "block" }}>{rung.summary}</span>
@@ -179,7 +184,7 @@ export default function Home() {
             <p className="bigcost" aria-label={`Total cost about ${ladder.total.toLocaleString()} dollars`}>
               ${ladder.total.toLocaleString()}
             </p>
-            <p className="meta">Total. Rungs 1 and 2 are free. The mouse test is gated and not in this total.</p>
+            <p className="meta">Total. The mouse test is gated and not in this total.</p>
             <p style={{ marginTop: 12 }}>
               <button type="button" className="linklike" onClick={() => setShowCosts(!showCosts)} aria-expanded={showCosts}>
                 {showCosts ? STRINGS.breakdownHide : STRINGS.breakdownToggle}
@@ -187,9 +192,9 @@ export default function Home() {
             </p>
             {showCosts && (
               <div>
-                {ladder.rungs
+                {shownRungs
                   .filter((r) => !r.locked)
-                  .flatMap((r) => r.costs.map((c) => ({ rung: r.id, ...c })))
+                  .flatMap((r, i) => r.costs.map((c) => ({ rung: i + 1, ...c })))
                   .map((c, i) => (
                     <div className="costline" key={i}>
                       <span>Rung {c.rung}: {c.label}</span>
@@ -197,11 +202,29 @@ export default function Home() {
                     </div>
                   ))}
                 <div className="costline" style={{ fontWeight: 600 }}>
-                  <span>Total, Rungs 1 to 4</span>
+                  <span>Total</span>
                   <span>${ladder.total.toLocaleString()}</span>
                 </div>
               </div>
             )}
+          </section>
+
+          <section className="section">
+            <h2>The usual path, compared</h2>
+            <div className="compare-row">
+              <span>
+                <span className="title">{ladder.usualPath.title}</span>
+                <span className="summary" style={{ display: "block" }}>{ladder.usualPath.detail}</span>
+              </span>
+              <span className="cost">Quote needed</span>
+            </div>
+            <div className="compare-row">
+              <span>
+                <span className="title">This ladder: cells first, mouse gated</span>
+                <span className="summary" style={{ display: "block" }}>A falsifiable answer in cells before any mouse is used. The mouse test runs only if the cells pass.</span>
+              </span>
+              <span className="cost">About ${ladder.total.toLocaleString()}</span>
+            </div>
           </section>
 
           <section className="section">
@@ -219,11 +242,7 @@ export default function Home() {
           <section className="section">
             <div className="nextcard">
               <h2 style={{ marginTop: 0 }}>{STRINGS.nextHeading}</h2>
-              <p>{ladder.nextStep}</p>
-              <button type="button" className="secondary" onClick={() => void copy(ladder.searchTerms.join("\n"), "Search terms copied")}>
-                {STRINGS.copySearch}
-              </button>
-              {copied && <p className="meta" style={{ marginTop: 10 }}>{copied}</p>}
+              <p style={{ marginBottom: 0 }}>{ladder.nextStep}</p>
             </div>
           </section>
 
@@ -238,6 +257,7 @@ export default function Home() {
               {STRINGS.startOver}
             </button>
           </div>
+          {copied && <p className="meta" style={{ marginTop: 12 }}>{copied}</p>}
         </div>
       )}
     </main>

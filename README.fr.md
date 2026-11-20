@@ -62,19 +62,17 @@ L'exemple préchargé est la vraie prédiction de RareGap :
 
 > L'inhibition de LSD1 réduit l'ATN1 mutante et sauve la DRPLA, avec du TAK-418 à 1 mg/kg/jour chez des souris AT-FL-65Q, et le rotarod à 4 mois comme critère d'évaluation
 
-L'échelle qu'il produit :
+L'échelle qu'il produit. La vérification de la littérature et des données publiques vient d'abord et n'est pas affichée : elle va de soi, chaque chercheur la fait avant de dépenser quoi que ce soit. Ce que l'échelle montre, ce sont les dépenses, de la moins chère à la plus chère :
 
 | Échelon | Test | Coût |
 | --- | --- | --- |
-| 1 | Vérifiez ce qui est déjà connu. Recherchez des articles et des dossiers d'essais sur le TAK-418 et l'ATN1. | Gratuit |
-| 2 | Consultez les données publiques. Vérifiez si LSD1 modifie les niveaux d'ATN1 dans les jeux de données existants. | Gratuit |
-| 3 | Réalisez un petit test cellulaire. Traitez des cellules avec du TAK-418 et mesurez l'ATN1. | Environ $1,200 |
-| 4 | Confirmez l'effet. Répétez avec une deuxième lignée cellulaire et une gamme de doses. | Environ $600 |
-| 5 | Test chez la souris, seulement si le test cellulaire réussit. TAK-418 chez des souris AT-FL-65Q, rotarod à 4 mois. | Devis nécessaire, verrouillé |
+| 1 | Réalisez un petit test cellulaire. Traitez des cellules avec du TAK-418 et mesurez l'ATN1. | Environ $1,200 |
+| 2 | Confirmez l'effet. Répétez avec une deuxième lignée cellulaire et une gamme de doses. | Environ $600 |
+| 3 | Test chez la souris, seulement si le test cellulaire réussit. TAK-418 chez des souris AT-FL-65Q, rotarod à 4 mois. | Devis nécessaire, verrouillé |
 
-**Total, échelons 1 à 4 : environ $1,800.** Le test chez la souris n'est pas dans le total. Il est verrouillé jusqu'à ce que le test cellulaire réussisse, car si l'ATN1 ne diminue pas dans les cellules, la dépense pour les souris est gaspillée.
+**Total : environ $1,800.** Le test chez la souris n'est pas dans le total. Il est verrouillé jusqu'à ce que le test cellulaire réussisse, car si l'ATN1 ne diminue pas dans les cellules, la dépense pour les souris est gaspillée.
 
-![Échelle TestRung pour l'exemple DRPLA, verdict $1,800, cinq échelons de la moins chère à la plus chère](screenshots/08-branded-ladder.png)
+![Échelle TestRung pour l'exemple DRPLA, verdict $1,800, trois échelons de la moins chère à la plus chère](screenshots/08-branded-ladder.png)
 
 Ce qui le réfuterait :
 
@@ -82,7 +80,7 @@ Ce qui le réfuterait :
 - **Stop if** l'ATN1 diminue mais les cellules ne semblent pas en meilleure santé.
 - **Stop if** les données publiques ne montrent aucun lien entre LSD1 et ATN1.
 
-![Ventilation des coûts TestRung, échelons 3 et 4 ligne par ligne, total $1,800](screenshots/04-cost-breakdown.png)
+![Ventilation des coûts TestRung, test cellulaire et confirmation ligne par ligne, total $1,800](screenshots/04-cost-breakdown.png)
 
 La ventilation des coûts est à un appui de distance, ligne par ligne. Rien n'est caché dans un chiffre rond.
 

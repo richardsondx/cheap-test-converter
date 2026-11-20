@@ -62,19 +62,17 @@ El ejemplo precargado es la predicción real de RareGap:
 
 > La inhibición de LSD1 reduce la ATN1 mutante y rescata la DRPLA, con TAK-418 a 1 mg/kg/día en ratones AT-FL-65Q, y rotarod a los 4 meses como criterio de valoración
 
-La escalera que produce:
+La escalera que produce. La comprobación de la literatura y de los datos públicos viene primero y no se muestra: es obvia, cada investigador la hace antes de gastar nada. Lo que la escalera muestra es el gasto, de menor a mayor costo:
 
 | Peldaño | Prueba | Costo |
 | --- | --- | --- |
-| 1 | Comprueba lo que ya se sabe. Busca artículos y registros de ensayos sobre TAK-418 y ATN1. | Gratis |
-| 2 | Mira los datos públicos. Comprueba si LSD1 cambia los niveles de ATN1 en los conjuntos de datos existentes. | Gratis |
-| 3 | Ejecuta una pequeña prueba celular. Trata las células con TAK-418 y mide ATN1. | Alrededor de $1,200 |
-| 4 | Confirma el efecto. Repite con una segunda línea celular y un rango de dosis. | Alrededor de $600 |
-| 5 | Prueba en ratones, solo si la prueba celular supera el filtro. TAK-418 en ratones AT-FL-65Q, rotarod a los 4 meses. | Se necesita presupuesto, bloqueado |
+| 1 | Ejecuta una pequeña prueba celular. Trata las células con TAK-418 y mide ATN1. | Alrededor de $1,200 |
+| 2 | Confirma el efecto. Repite con una segunda línea celular y un rango de dosis. | Alrededor de $600 |
+| 3 | Prueba en ratones, solo si la prueba celular supera el filtro. TAK-418 en ratones AT-FL-65Q, rotarod a los 4 meses. | Se necesita presupuesto, bloqueado |
 
-**Total, peldaños 1 a 4: alrededor de $1,800.** La prueba en ratones no está incluida en el total. Está bloqueada hasta que la prueba celular la supere, porque si ATN1 no disminuye en las células, el gasto en ratones es un desperdicio.
+**Total: alrededor de $1,800.** La prueba en ratones no está incluida en el total. Está bloqueada hasta que la prueba celular la supere, porque si ATN1 no disminuye en las células, el gasto en ratones es un desperdicio.
 
-![Escalera de TestRung para el ejemplo de DRPLA, veredicto de $1,800, cinco peldaños de menor a mayor costo](screenshots/08-branded-ladder.png)
+![Escalera de TestRung para el ejemplo de DRPLA, veredicto de $1,800, tres peldaños de menor a mayor costo](screenshots/08-branded-ladder.png)
 
 Qué demostraría que está equivocada:
 
@@ -82,7 +80,7 @@ Qué demostraría que está equivocada:
 - **Stop if** ATN1 disminuye pero las células no se ven más sanas.
 - **Stop if** los datos públicos no muestran ningún vínculo entre LSD1 y ATN1.
 
-![Desglose de costos de TestRung, peldaños 3 y 4 línea por línea, total de $1,800](screenshots/04-cost-breakdown.png)
+![Desglose de costos de TestRung, prueba celular y confirmación línea por línea, total de $1,800](screenshots/04-cost-breakdown.png)
 
 El desglose de costos está a un toque de distancia, línea por línea. Nada se esconde en una cifra redonda.
 

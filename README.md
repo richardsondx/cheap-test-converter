@@ -62,19 +62,17 @@ The pre-loaded example is the real RareGap prediction:
 
 > LSD1 inhibition lowers mutant ATN1 and rescues DRPLA, using TAK-418 at 1 mg/kg/day in AT-FL-65Q mice, with rotarod at 4 months as the endpoint
 
-The ladder it produces:
+The ladder it produces. The literature check and the public data check come first and are not shown: they are obvious, every researcher does them before spending anything. What the ladder shows is the spending, cheapest first:
 
 | Rung | Test | Cost |
 | --- | --- | --- |
-| 1 | Check what is already known. Search papers and trial records for TAK-418 and ATN1. | Free |
-| 2 | Look in public data. See if LSD1 changes ATN1 levels in existing datasets. | Free |
-| 3 | Run one small cell test. Treat cells with TAK-418 and measure ATN1. | About $1,200 |
-| 4 | Confirm the effect. Repeat with a second cell line and a dose range. | About $600 |
-| 5 | Mouse test, only if the cell test passes. TAK-418 in AT-FL-65Q mice, rotarod at 4 months. | Quote needed, locked |
+| 1 | Run one small cell test. Treat cells with TAK-418 and measure ATN1. | About $1,200 |
+| 2 | Confirm the effect. Repeat with a second cell line and a dose range. | About $600 |
+| 3 | Mouse test, only if the cell test passes. TAK-418 in AT-FL-65Q mice, rotarod at 4 months. | Quote needed, locked |
 
-**Total, Rungs 1 to 4: about $1,800.** The mouse test is not in the total. It is locked until the cell test passes, because if ATN1 does not fall in cells, the mouse spend is wasted.
+**Total: about $1,800.** The mouse test is not in the total. It is locked until the cell test passes, because if ATN1 does not fall in cells, the mouse spend is wasted.
 
-![TestRung ladder for the DRPLA example, verdict $1,800, five rungs cheapest first](screenshots/08-branded-ladder.png)
+![TestRung ladder for the DRPLA example, verdict $1,800, three rungs cheapest first](screenshots/08-branded-ladder.png)
 
 What would prove it wrong:
 
@@ -82,7 +80,7 @@ What would prove it wrong:
 - **Stop if** ATN1 drops but cells look no healthier.
 - **Stop if** public data shows no link between LSD1 and ATN1.
 
-![TestRung cost breakdown, Rung 3 and Rung 4 line by line, total $1,800](screenshots/04-cost-breakdown.png)
+![TestRung cost breakdown, cell test and confirm line by line, total $1,800](screenshots/04-cost-breakdown.png)
 
 The cost breakdown is one tap away, line by line. Nothing is hidden in a round number.
 
