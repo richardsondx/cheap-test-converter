@@ -1,0 +1,38 @@
+# TestRung
+
+> Turn one idea into the cheapest test that could prove it wrong.
+
+TestRung is an open source web app for researchers. Paste a prediction, get a test ladder cheapest first, a cost, kill criteria, and a next step, in under a minute.
+
+## Key facts
+
+- Stack: Next.js 15.5.9, React 19, TypeScript, plain CSS. No component library, no database, no model call in v1.
+- The DRPLA example: LSD1 inhibition lowers mutant ATN1 and rescues DRPLA, TAK-418 at 1 mg/kg/day in AT-FL-65Q mice, rotarod at 4 months. Total about $1,800 for Rungs 1 to 4. Rung 1 free literature, Rung 2 free public data, Rung 3 one cell test about $1,200, Rung 4 confirm about $600. Mouse test is a locked Rung 5, quote needed, not in the total.
+- Kill criteria are first class: every ladder says what would prove the idea wrong, and when to stop.
+- Costs are planning estimates, not quotes. A lab must review the preregistration draft before use.
+- License: MIT.
+
+## Files
+
+- README.md: what it is, how to run it, screenshots, roadmap
+- ARCHITECTURE.md: architecture, and an honest note on the Gemini 4 Neon attempt
+- docs/cheapest-place-brainstorm.md: Opus 5.5 design for a Numbeo-style cheapest-place comparison
+- brand/BRAND.md: name, logo, colours, voice
+- app/page.tsx: the whole one-screen flow
+- lib/ladder.ts: ladder engine, cost model, kill criteria, export text
+- lib/generate.ts: generation interface, ready for Gemini 4 Neon in v2
+- lib/strings.ts: all user-facing copy in one place
+
+## Run it
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:3000
+
+## Optional
+
+- Brand: TestRung, domain testrung.com (not yet bought)
+- Project: RareGap (raregap.ai)
