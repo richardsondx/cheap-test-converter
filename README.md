@@ -27,6 +27,10 @@
   <a href="#contributing">Contributing</a>
 </p>
 
+<p align="center">
+  Read this in: English · <a href="README.fr.md">Français</a> · <a href="README.es.md">Español</a>
+</p>
+
 ---
 
 ## The problem
@@ -113,8 +117,8 @@ If you have a real price, a published core rate, or a dated quote, that is the m
 You need Node 20 or newer. Nothing else.
 
 ```bash
-git clone https://github.com/richardsondx/cheap-test-converter.git
-cd cheap-test-converter
+git clone https://github.com/richardsondx/testrung.git
+cd testrung
 npm install
 npm run dev
 ```
@@ -185,6 +189,16 @@ Contributions are welcome, and small ones are best. The most valuable contributi
 Read [`CONTRIBUTING.md`](CONTRIBUTING.md) first. In short: fork, branch from `main`, keep the build green (`npm run build`), keep the UI minimal, never invent a number, and open a pull request with one change in it.
 
 What helps most, in order: a real price, a better rung, a kill criterion, a bug fix, a clearer sentence.
+
+## Author
+
+**Richardson Dackam** — founder of [RareGap](https://raregap.ai), builder and systems thinker.
+
+- GitHub: [github.com/richardsondx](https://github.com/richardsondx)
+- LinkedIn: [linkedin.com/in/richardsondx](https://www.linkedin.com/in/richardsondx)
+- Project: [RareGap](https://raregap.ai)
+
+TestRung started as the Cheap-Test Converter, built after the Ross lab at Johns Hopkins said it would advise on the DRPLA test but had no spare funds to run it.
 
 ## License
 
